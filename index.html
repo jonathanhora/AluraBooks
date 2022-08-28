@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -45,7 +47,39 @@
     </section>
 
     <section class="carrossel">
-        <h2 class="carrossel__titulo">Novos lançamentos</h2>
+        <h2 class="carrossel__titulo">ÚLTIMOS LANÇAMENTOS</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="images/livros/ApacheKafka.svg" alt="Livro sobre apache kafka e spring boot da alura books"></div>
+                <div class="swiper-slide"><img src="images/livros/Liderança.svg" alt="Livro sobre liderança em design da alura books"></div>
+                <div class="swiper-slide"><img src="images/livros/Javascript.svg" alt="Livro sobre JavaScript da Alura books"></div>
+                <div class="swiper-slide"><img src="images/livros/ReactNative.svg" alt="Livro sobre React da Alura books"></div>
+                <div class="swiper-slide"><img src="images/livros/Guia Front-end.svg" alt="Livro guia de Front-end da Alura books"></div>
+                <div class="swiper-slide"><img src="images/livros/Acessibilidade.svg" alt="Livro sobre Acessibilidade da Alura books"></div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+  
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
+    });
+    </script>
 </body>
 </html>
