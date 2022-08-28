@@ -71,3 +71,12 @@
     color: var(--branco);
     font-weight: 700;
 }
+
+.descricao__estrelas{
+    display: flex;
+}
+
+.estrela{
+    margin: 0 0.1em;
+    margin-bottom: 0.5em;
+}
