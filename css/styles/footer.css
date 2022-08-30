@@ -3,3 +3,33 @@
     background-color: var(--branco);
     border-top: 1px solid #858585;
 }
+
+.lista__rodape{
+    display: none;
+}
+
+@media screen and (min-width: 1024px){
+    .lista__rodape{
+        display: block;
+    }
+
+    .rodape{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .rodape__item{
+        display: flex;
+        text-align: center;
+        margin: 0.6em 0;
+    }
+
+    .rodape__link{
+        color: var(--cinza);
+        margin-left: 0.6em;
+    }
+
+    .rodape__item__titulo{
+        color: var(--cinza-titulo);
+    }
+}
