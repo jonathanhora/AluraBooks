@@ -9,6 +9,10 @@
 }
 
 @media screen and (min-width: 1024px){
+    .rodape__titulo{
+        font-size: 24px;
+    }
+
     .lista__rodape{
         display: block;
     }
@@ -20,7 +24,7 @@
 
     .rodape__item{
         display: flex;
-        text-align: center;
+        align-items: center;
         margin: 0.6em 0;
     }
 
@@ -30,6 +34,18 @@
     }
 
     .rodape__item__titulo{
+        font-size: 14px;
         color: var(--cinza-titulo);
+    }
+}
+
+@media screen and (min-width: 1366px){
+    .lista__rodape{
+        border-left: 1px solid var(--cinza-titulo);
+        padding-left: 1em;
+    }
+
+    .rodape{
+        padding: 3em 0;
     }
 }

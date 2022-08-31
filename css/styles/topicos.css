@@ -38,3 +38,9 @@
     }
     
 }
+
+@media screen and (min-width: 1366px){
+    .topicos{
+        padding: 3em 30vw;
+    }
+}
